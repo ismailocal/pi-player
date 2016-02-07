@@ -1,0 +1,20 @@
+.pi-player{background-color:#000;color:#fff;width:100%;height:50px;}
+.pi-player ul{position:relative;list-style:none;margin:0;padding:0;width:100%;height:100%;}
+.pi-player ul li{float:left;line-height:50px;}
+
+.pi-player ul li.pi-pp{cursor:pointer;text-align:center;width:50px;font-size:20px;}
+
+.pi-player ul li.pi-volume{cursor:pointer;width:30px;font-size:20px;position:relative;}
+.pi-player ul li.pi-volume i{width:20px;}
+.pi-player ul li.pi-volume .pi-volume-line{visibility:hidden;position:absolute;top:0px;left:30px;height:50px;background-color:#000;width:100px;}
+.pi-player ul li.pi-volume .pi-volume-line:after{content:'';position:absolute;top:24px;left:0;height:2px;background-color:#fff;width:90px;z-index:10;}
+.pi-player ul li.pi-volume .pi-volume-current-line{position:absolute;top:20px;left:0;height:10px;width:10px;background-color:#fff;}
+.pi-player ul li.pi-volume:hover .pi-volume-line{visibility:visible;}
+
+.pi-player ul li.pi-time{width:100px;font-size:15px;}
+.pi-player ul li.pi-time .pi-current-time{}
+.pi-player ul li.pi-time .pi-separator-time:after{content:' / ';}
+.pi-player ul li.pi-time .pi-duration-time{}
+
+.pi-player ul li.pi-line{cursor:pointer;position:absolute;width: calc(100% - 180px);height:100%;margin:0 0 0 180px;}
+.pi-player ul li.pi-line .pi-current-line{position:absolute;top:0;bottom:0;left:0;width:0%;background-color:#333;}
